@@ -32,7 +32,7 @@ fn main() {
     asm.exit(true);
     let asmcode = maker(
         &asm,
-        Target::new(arch::Bit::X64, arch::Arch::X86, arch::OS::Windows),
+        Target::new(arch::Bit::X64, arch::Arch::X86, arch::OS::Linux),
     );
     println!("{}", asmcode);
 }
